@@ -25,24 +25,16 @@
                 <StackLayout row="0" height="250" class="utmArea">
                     <Label class="utmTitle" text="PartnerInfo"></Label>
 
-                    <GridLayout  columns="auto, auto" rows="50, 50" >
-                        <Label text="Partner :" textWrap="true" row="0" col="0" class="th partner"></Label>
-                        <Label text="Test1" textWrap="true" row="0" col="1" class="th partner"></Label>
-
-                        <Label text="Customer :" textWrap="true" row="1" col="0" class="th customer"></Label>
-                        <Label text="Test2" textWrap="true" row="1" col="1" class="th customer"></Label>
-                    </GridLayout>
-
-                    <!-- <StackLayout row="0" height="100">
+                    <StackLayout row="0" height="85">
                         <Label class="partnerTitle" text="Partner : "></Label>
                         <ListPicker class="partnerList" :items="comboOfItems" selectedIndex="0" />
                     </StackLayout>
-                    <StackLayout row="1" height="100">
+                    <StackLayout row="1" height="85">
                         <Label class="partnerTitle" text="Customer : "></Label>
                         <ListPicker class="partnerList" :items="comboOfItems" selectedIndex="0" />
-                    </StackLayout> -->
+                    </StackLayout>
 
-                    <Button text="Button" />
+                    <Button text="Search" class="btnSearch"/>
                 </StackLayout>
 
                 <StackLayout row="1" height="300" class="utmArea">
@@ -86,12 +78,12 @@
         data() {
             return {
                 listOfItems: [
-                    {no:1, id: "choi", name: "seongjin", sn: "A123", status: "active", peroid: 10 },
-                    {no:2, id: "choi", name: "seongjin", sn: "A123", status: "active", peroid: 10 },
-                    {no:3, id: "choi", name: "seongjin", sn: "A123", status: "active", peroid: 10 },
-                    {no:4, id: "choi", name: "seongjin", sn: "A123", status: "active", peroid: 10 },
-                    {no:5, id: "choi", name: "seongjin", sn: "A123", status: "active", peroid: 10 },
-                    {no:6, id: "choi", name: "seongjin", sn: "A123", status: "active", peroid: 10 }
+                    {no:1, id: "T123", name: "E123", sn: "A123", status: "active", peroid: 10 },
+                    {no:2, id: "T123", name: "E123", sn: "A123", status: "active", peroid: 10 },
+                    {no:3, id: "T123", name: "E123", sn: "A123", status: "active", peroid: 10 },
+                    {no:4, id: "T123", name: "E123", sn: "A123", status: "active", peroid: 10 },
+                    {no:5, id: "T123", name: "E123", sn: "A123", status: "active", peroid: 10 },
+                    {no:6, id: "T123", name: "E123", sn: "A123", status: "active", peroid: 10 }
                 ],
                 comboOfItems : [
                     "Test01", "Test02", "Test03"
@@ -149,17 +141,18 @@
     }
 
     .table .th {
-        background-color: #e6eef4
+        padding: 10;
+        background-color: #e6eef4;
+        border-color: #e6eef4;
     }
 
     .table .th Label {
         color: #00476d
     }
 
-    .table .th,
-    .table .td {
-        padding: 10;
-        border-color: #e6eef4
+    .btnSearch {
+        width : 100;
+        height: 40;
     }
     
 </style>
